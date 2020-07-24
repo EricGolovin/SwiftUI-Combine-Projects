@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92C617524CB7E290018284A /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92C617424CB7E290018284A /* TimeCounter.swift */; };
 		E9DD00FF24C9AE13000954C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD00FE24C9AE13000954C4 /* AppDelegate.swift */; };
 		E9DD010124C9AE13000954C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD010024C9AE13000954C4 /* SceneDelegate.swift */; };
 		E9DD010324C9AE13000954C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD010224C9AE13000954C4 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E92C617424CB7E290018284A /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		E9DD00FB24C9AE13000954C4 /* RGBullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DD00FE24C9AE13000954C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9DD010024C9AE13000954C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				E9DD00FE24C9AE13000954C4 /* AppDelegate.swift */,
 				E9DD010024C9AE13000954C4 /* SceneDelegate.swift */,
 				E9DD010224C9AE13000954C4 /* ContentView.swift */,
+				E92C617424CB7E290018284A /* TimeCounter.swift */,
 				E9DD010424C9AE14000954C4 /* Assets.xcassets */,
 				E9DD010924C9AE14000954C4 /* LaunchScreen.storyboard */,
 				E9DD010C24C9AE14000954C4 /* Info.plist */,
@@ -147,6 +150,7 @@
 			files = (
 				E9DD00FF24C9AE13000954C4 /* AppDelegate.swift in Sources */,
 				E9DD010124C9AE13000954C4 /* SceneDelegate.swift in Sources */,
+				E92C617524CB7E290018284A /* TimeCounter.swift in Sources */,
 				E9DD010324C9AE13000954C4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
