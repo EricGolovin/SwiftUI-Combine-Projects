@@ -66,7 +66,7 @@ struct ContentView: View {
                 destination: ViewControllerRepresentation()) {
                     Text("Play BullsEye")
                 }.padding(.top)
-            }.padding(.horizontal)
+            }.padding().navigationBarTitle(Text("Game"), displayMode: .inline)
         }
     }
     

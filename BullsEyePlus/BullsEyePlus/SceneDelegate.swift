@@ -1,14 +1,13 @@
 //
 //  SceneDelegate.swift
-//  RGBullsEye
+//  BullsEyePlus
 //
-//  Created by Eric Golovin on 23.07.2020.
+//  Created by Eric Golovin on 27.07.2020.
 //
 
 import UIKit
 import SwiftUI
 
-@available(iOS 14.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
