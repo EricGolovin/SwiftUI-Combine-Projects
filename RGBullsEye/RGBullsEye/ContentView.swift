@@ -45,7 +45,7 @@ struct ContentView: View {
             }) {
                 Text("Hit Me!").fontWeight(.bold).font(.title)
             }.alert(isPresented: $showAlert, content: {
-                Alert(title: Text("Your Score"), message: Text(String(computeScore())), primaryButton: .default(Text("New color"), action: {
+                Alert(title: Text("Your Score"), message: Text(String(computeScore()) + " / 100"), primaryButton: .default(Text("New color"), action: {
                     rTarget = Double.random(in: 0..<1)
                     gTarget = Double.random(in: 0..<1)
                     bTarget = Double.random(in: 0..<1)
