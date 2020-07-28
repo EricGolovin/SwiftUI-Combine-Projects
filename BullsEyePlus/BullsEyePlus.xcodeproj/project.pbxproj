@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E945304B24CF6EF600CD74B0 /* BullsEyeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945304A24CF6EF600CD74B0 /* BullsEyeGame.swift */; };
 		E945308A24CF732D00CD74B0 /* BullaEyePlus WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E945308924CF732D00CD74B0 /* BullaEyePlus WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E945309024CF732D00CD74B0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E945308E24CF732D00CD74B0 /* Interface.storyboard */; };
 		E945309224CF732F00CD74B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E945309124CF732F00CD74B0 /* Assets.xcassets */; };
@@ -20,13 +19,14 @@
 		E94530A824CF732F00CD74B0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94530A724CF732F00CD74B0 /* ComplicationController.swift */; };
 		E94530AA24CF733000CD74B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94530A924CF733000CD74B0 /* Assets.xcassets */; };
 		E94530AD24CF733000CD74B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94530AC24CF733000CD74B0 /* Preview Assets.xcassets */; };
-		E94530BB24CF735000CD74B0 /* BullsEyeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945304A24CF6EF600CD74B0 /* BullsEyeGame.swift */; };
 		E973FB1824CF6E52005D37D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973FB1724CF6E52005D37D1 /* AppDelegate.swift */; };
 		E973FB1A24CF6E52005D37D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973FB1924CF6E52005D37D1 /* SceneDelegate.swift */; };
 		E973FB1C24CF6E52005D37D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973FB1B24CF6E52005D37D1 /* ContentView.swift */; };
 		E973FB1E24CF6E55005D37D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E973FB1D24CF6E55005D37D1 /* Assets.xcassets */; };
 		E973FB2124CF6E55005D37D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E973FB2024CF6E55005D37D1 /* Preview Assets.xcassets */; };
 		E973FB2424CF6E55005D37D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E973FB2224CF6E55005D37D1 /* LaunchScreen.storyboard */; };
+		E9CFB3BD24CF86C6000925DF /* Game in Frameworks */ = {isa = PBXBuildFile; productRef = E9CFB3BC24CF86C6000925DF /* Game */; };
+		E9CFB3BF24CF86DD000925DF /* Game in Frameworks */ = {isa = PBXBuildFile; productRef = E9CFB3BE24CF86DD000925DF /* Game */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +72,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E945304A24CF6EF600CD74B0 /* BullsEyeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeGame.swift; sourceTree = "<group>"; };
 		E945308624CF732D00CD74B0 /* BullaEyePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullaEyePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E945308924CF732D00CD74B0 /* BullaEyePlus WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BullaEyePlus WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E945308F24CF732D00CD74B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -97,6 +96,7 @@
 		E973FB2024CF6E55005D37D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E973FB2324CF6E55005D37D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E973FB2524CF6E55005D37D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CFB3B724CF85A3000925DF /* Game */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Game; path = ../../packages/Game; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CFB3BF24CF86DD000925DF /* Game in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CFB3BD24CF86C6000925DF /* Game in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +161,7 @@
 				E945308D24CF732D00CD74B0 /* BullaEyePlus WatchKit App */,
 				E945309C24CF732F00CD74B0 /* BullaEyePlus WatchKit Extension */,
 				E973FB1524CF6E52005D37D1 /* Products */,
+				E9CFB3BB24CF86C6000925DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,10 +179,10 @@
 		E973FB1624CF6E52005D37D1 /* BullsEyePlus */ = {
 			isa = PBXGroup;
 			children = (
+				E9CFB3B724CF85A3000925DF /* Game */,
 				E973FB1724CF6E52005D37D1 /* AppDelegate.swift */,
 				E973FB1924CF6E52005D37D1 /* SceneDelegate.swift */,
 				E973FB1B24CF6E52005D37D1 /* ContentView.swift */,
-				E945304A24CF6EF600CD74B0 /* BullsEyeGame.swift */,
 				E973FB1D24CF6E55005D37D1 /* Assets.xcassets */,
 				E973FB2224CF6E55005D37D1 /* LaunchScreen.storyboard */,
 				E973FB2524CF6E55005D37D1 /* Info.plist */,
@@ -194,6 +197,13 @@
 				E973FB2024CF6E55005D37D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9CFB3BB24CF86C6000925DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +256,9 @@
 			dependencies = (
 			);
 			name = "BullaEyePlus WatchKit Extension";
+			packageProductDependencies = (
+				E9CFB3BE24CF86DD000925DF /* Game */,
+			);
 			productName = "BullaEyePlus WatchKit Extension";
 			productReference = E945309824CF732F00CD74B0 /* BullaEyePlus WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -263,6 +276,9 @@
 			dependencies = (
 			);
 			name = BullsEyePlus;
+			packageProductDependencies = (
+				E9CFB3BC24CF86C6000925DF /* Game */,
+			);
 			productName = BullsEyePlus;
 			productReference = E973FB1424CF6E52005D37D1 /* BullsEyePlus.app */;
 			productType = "com.apple.product-type.application";
@@ -355,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E94530A024CF732F00CD74B0 /* ContentView.swift in Sources */,
-				E94530BB24CF735000CD74B0 /* BullsEyeGame.swift in Sources */,
 				E945309E24CF732F00CD74B0 /* HostingController.swift in Sources */,
 				E94530A424CF732F00CD74B0 /* NotificationController.swift in Sources */,
 				E94530A224CF732F00CD74B0 /* ExtensionDelegate.swift in Sources */,
@@ -368,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E945304B24CF6EF600CD74B0 /* BullsEyeGame.swift in Sources */,
 				E973FB1824CF6E52005D37D1 /* AppDelegate.swift in Sources */,
 				E973FB1A24CF6E52005D37D1 /* SceneDelegate.swift in Sources */,
 				E973FB1C24CF6E52005D37D1 /* ContentView.swift in Sources */,
@@ -731,6 +745,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9CFB3BC24CF86C6000925DF /* Game */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Game;
+		};
+		E9CFB3BE24CF86DD000925DF /* Game */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Game;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E973FB0C24CF6E52005D37D1 /* Project object */;
 }

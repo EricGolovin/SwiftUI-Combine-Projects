@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Game
 
 struct ContentView: View {
     @ObservedObject private var game = BullsEyeGame()
