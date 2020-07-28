@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pxp-Ag-15P">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Upk-c7-nSa">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="Pxp-Ag-15P" customClass="ViewController" customModule="SwiftUITesting_BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TtK-M9-3Yp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hyt-V2-QUZ">
+                                <rect key="frame" x="37" y="64" width="340.5" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put the Bull's Eye as close as you can to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggm-YF-3g3">
+                                        <rect key="frame" x="0.0" y="0.0" width="308.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axK-Vc-lwN">
+                                        <rect key="frame" x="310.5" y="0.0" width="30" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iTR-OM-Xau">
+                                <rect key="frame" x="38.5" y="114.5" width="319" height="31"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="Pxp-Ag-15P" eventType="valueChanged" id="5PW-xS-Gcs"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odm-pi-TDf">
+                                <rect key="frame" x="20" y="119.5" width="10.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biT-Ks-qQo">
+                                <rect key="frame" x="365.5" y="119.5" width="28.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiw-HM-Zkh">
+                                <rect key="frame" x="182" y="426" width="50" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="K1L-pW-5KP"/>
+                                </constraints>
+                                <state key="normal" title="Hit Me!"/>
+                                <connections>
+                                    <action selector="hitMeTapped:" destination="Pxp-Ag-15P" eventType="touchUpInside" id="dXk-vK-bSG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NUw-Ad-4vI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NUw-Ad-4vI" firstAttribute="trailing" secondItem="biT-Ks-qQo" secondAttribute="trailing" id="0D5-n3-Fqh"/>
+                            <constraint firstItem="biT-Ks-qQo" firstAttribute="leading" secondItem="iTR-OM-Xau" secondAttribute="trailing" constant="10" id="1wM-bz-607"/>
+                            <constraint firstAttribute="trailing" secondItem="biT-Ks-qQo" secondAttribute="trailing" constant="20" id="8WO-Rf-AZk"/>
+                            <constraint firstItem="hyt-V2-QUZ" firstAttribute="top" secondItem="NUw-Ad-4vI" secondAttribute="top" constant="20" id="B7U-hL-7U3"/>
+                            <constraint firstItem="hyt-V2-QUZ" firstAttribute="centerX" secondItem="TtK-M9-3Yp" secondAttribute="centerX" id="O00-Pd-yTW"/>
+                            <constraint firstItem="iTR-OM-Xau" firstAttribute="leading" secondItem="Odm-pi-TDf" secondAttribute="trailing" constant="10" id="Ye1-Z9-udI"/>
+                            <constraint firstItem="iTR-OM-Xau" firstAttribute="top" secondItem="hyt-V2-QUZ" secondAttribute="bottom" constant="30" id="fPH-c1-aR4"/>
+                            <constraint firstItem="Oiw-HM-Zkh" firstAttribute="centerY" secondItem="TtK-M9-3Yp" secondAttribute="centerY" id="flb-kk-L06"/>
+                            <constraint firstItem="Oiw-HM-Zkh" firstAttribute="centerX" secondItem="TtK-M9-3Yp" secondAttribute="centerX" id="mlY-XZ-agT"/>
+                            <constraint firstItem="Odm-pi-TDf" firstAttribute="leading" secondItem="TtK-M9-3Yp" secondAttribute="leading" constant="20" id="q7K-8V-3hP"/>
+                            <constraint firstItem="Odm-pi-TDf" firstAttribute="leading" secondItem="NUw-Ad-4vI" secondAttribute="leading" id="trK-1M-3hW"/>
+                            <constraint firstItem="Odm-pi-TDf" firstAttribute="centerY" secondItem="iTR-OM-Xau" secondAttribute="centerY" id="wGu-23-p5h"/>
+                            <constraint firstItem="biT-Ks-qQo" firstAttribute="centerY" secondItem="iTR-OM-Xau" secondAttribute="centerY" id="yYu-52-PrG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="q7K-8V-3hP"/>
+                                <exclude reference="8WO-Rf-AZk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="0D5-n3-Fqh"/>
+                                <exclude reference="trK-1M-3hW"/>
+                                <include reference="q7K-8V-3hP"/>
+                                <include reference="8WO-Rf-AZk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="iTR-OM-Xau" id="sBz-cd-frr"/>
+                        <outlet property="targetLabel" destination="axK-Vc-lwN" id="VzH-ge-7J8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rv7-VA-tOU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
