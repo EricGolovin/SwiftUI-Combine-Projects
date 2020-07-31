@@ -3,26 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E9590EB724D4CC62001D24F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9590EB624D4CC62001D24F0 /* AppDelegate.swift */; };
-		E9590EB924D4CC62001D24F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9590EB824D4CC62001D24F0 /* ContentView.swift */; };
 		E9590EBB24D4CC64001D24F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9590EBA24D4CC64001D24F0 /* Assets.xcassets */; };
 		E9590EBE24D4CC64001D24F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9590EBD24D4CC64001D24F0 /* Preview Assets.xcassets */; };
 		E9590EC124D4CC64001D24F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9590EBF24D4CC64001D24F0 /* Main.storyboard */; };
+		E9590ECC24D4CDBF001D24F0 /* GameView in Frameworks */ = {isa = PBXBuildFile; productRef = E9590ECB24D4CDBF001D24F0 /* GameView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9590EB324D4CC62001D24F0 /* MacBullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacBullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9590EB624D4CC62001D24F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9590EB824D4CC62001D24F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9590EBA24D4CC64001D24F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9590EBD24D4CC64001D24F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9590EC024D4CC64001D24F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9590EC224D4CC64001D24F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9590EC324D4CC64001D24F0 /* MacBullsEye.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacBullsEye.entitlements; sourceTree = "<group>"; };
+		E9590EC924D4CDB8001D24F0 /* GameView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameView; path = ../packages/GameView; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9590ECC24D4CDBF001D24F0 /* GameView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,8 +40,10 @@
 		E9590EAA24D4CC62001D24F0 = {
 			isa = PBXGroup;
 			children = (
+				E9590EC924D4CDB8001D24F0 /* GameView */,
 				E9590EB524D4CC62001D24F0 /* MacBullsEye */,
 				E9590EB424D4CC62001D24F0 /* Products */,
+				E9590ECA24D4CDBF001D24F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				E9590EB624D4CC62001D24F0 /* AppDelegate.swift */,
-				E9590EB824D4CC62001D24F0 /* ContentView.swift */,
 				E9590EBA24D4CC64001D24F0 /* Assets.xcassets */,
 				E9590EBF24D4CC64001D24F0 /* Main.storyboard */,
 				E9590EC224D4CC64001D24F0 /* Info.plist */,
@@ -72,6 +74,13 @@
 				E9590EBD24D4CC64001D24F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9590ECA24D4CDBF001D24F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +99,9 @@
 			dependencies = (
 			);
 			name = MacBullsEye;
+			packageProductDependencies = (
+				E9590ECB24D4CDBF001D24F0 /* GameView */,
+			);
 			productName = MacBullsEye;
 			productReference = E9590EB324D4CC62001D24F0 /* MacBullsEye.app */;
 			productType = "com.apple.product-type.application";
@@ -144,7 +156,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9590EB924D4CC62001D24F0 /* ContentView.swift in Sources */,
 				E9590EB724D4CC62001D24F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +359,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9590ECB24D4CDBF001D24F0 /* GameView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GameView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9590EAB24D4CC62001D24F0 /* Project object */;
 }
