@@ -20,11 +20,12 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text("Put the Bull's Eye as close as you can to: \(game.targetValue)")
+            Text("Aim for: \(game.targetValue)")
             HStack {
                 Text("0")
-                Slider(value: $currentValue, in: 1.0...100.0, step: 1.0)
-                    .background(Color.blue)
+                Slider(value: $currentValue, in: 1.0...100.0)
+                    .digitalCrownRotation($currentValue, from: 1.0, through: 100.0)
+                    .background(Color.red)
                     .opacity(alpha)
                 Text("100")
             }
@@ -43,7 +44,7 @@ struct ContentView: View {
             }
             .padding()
             HStack {
-                Text("Total Score: \(game.scoreTotal)").font(.headline)
+                Text("Total: \(game.scoreTotal)").font(.headline)
                 Text("Round: \(game.round)").font(.callout)
             }
         }

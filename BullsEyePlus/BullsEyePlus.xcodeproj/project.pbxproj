@@ -19,6 +19,7 @@
 		E94530A824CF732F00CD74B0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94530A724CF732F00CD74B0 /* ComplicationController.swift */; };
 		E94530AA24CF733000CD74B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94530A924CF733000CD74B0 /* Assets.xcassets */; };
 		E94530AD24CF733000CD74B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94530AC24CF733000CD74B0 /* Preview Assets.xcassets */; };
+		E9590EA924D4C91E001D24F0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9590EA824D4C91E001D24F0 /* Settings.bundle */; };
 		E973FB1824CF6E52005D37D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973FB1724CF6E52005D37D1 /* AppDelegate.swift */; };
 		E973FB1A24CF6E52005D37D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973FB1924CF6E52005D37D1 /* SceneDelegate.swift */; };
 		E973FB1C24CF6E52005D37D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973FB1B24CF6E52005D37D1 /* ContentView.swift */; };
@@ -88,6 +89,8 @@
 		E94530AC24CF733000CD74B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E94530AE24CF733000CD74B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94530AF24CF733000CD74B0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E9590EA724D4C638001D24F0 /* BullsEyePlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BullsEyePlus.entitlements; sourceTree = "<group>"; };
+		E9590EA824D4C91E001D24F0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E973FB1424CF6E52005D37D1 /* BullsEyePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEyePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E973FB1724CF6E52005D37D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E973FB1924CF6E52005D37D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +160,7 @@
 		E973FB0B24CF6E52005D37D1 = {
 			isa = PBXGroup;
 			children = (
+				E9590EA824D4C91E001D24F0 /* Settings.bundle */,
 				E973FB1624CF6E52005D37D1 /* BullsEyePlus */,
 				E945308D24CF732D00CD74B0 /* BullaEyePlus WatchKit App */,
 				E945309C24CF732F00CD74B0 /* BullaEyePlus WatchKit Extension */,
@@ -179,6 +183,7 @@
 		E973FB1624CF6E52005D37D1 /* BullsEyePlus */ = {
 			isa = PBXGroup;
 			children = (
+				E9590EA724D4C638001D24F0 /* BullsEyePlus.entitlements */,
 				E9CFB3B724CF85A3000925DF /* Game */,
 				E973FB1724CF6E52005D37D1 /* AppDelegate.swift */,
 				E973FB1924CF6E52005D37D1 /* SceneDelegate.swift */,
@@ -357,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9590EA924D4C91E001D24F0 /* Settings.bundle in Resources */,
 				E973FB2424CF6E55005D37D1 /* LaunchScreen.storyboard in Resources */,
 				E973FB2124CF6E55005D37D1 /* Preview Assets.xcassets in Resources */,
 				E973FB1E24CF6E55005D37D1 /* Assets.xcassets in Resources */,
@@ -659,17 +665,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BullsEyePlus/BullsEyePlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BullsEyePlus/Preview Content\"";
 				DEVELOPMENT_TEAM = U87X99UU87;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BullsEyePlus/Info.plist;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericgolovin.BullsEyePlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -680,17 +689,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BullsEyePlus/BullsEyePlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BullsEyePlus/Preview Content\"";
 				DEVELOPMENT_TEAM = U87X99UU87;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BullsEyePlus/Info.plist;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericgolovin.BullsEyePlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
