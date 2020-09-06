@@ -11,6 +11,7 @@
 		E9AA9CD32505200800D9C4B5 /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CD22505200800D9C4B5 /* LogoImage.swift */; };
 		E9AA9CD52505204000D9C4B5 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CD42505204000D9C4B5 /* WelcomeMessageView.swift */; };
 		E9AA9CD82505207B00D9C4B5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CD72505207B00D9C4B5 /* RegisterView.swift */; };
+		E9AA9CDA2505475D00D9C4B5 /* BorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CD92505475D00D9C4B5 /* BorderViewModifier.swift */; };
 		E9BEE78824E030800051BACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BEE78724E030800051BACC /* AppDelegate.swift */; };
 		E9BEE78A24E030800051BACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BEE78924E030800051BACC /* SceneDelegate.swift */; };
 		E9BEE78E24E030810051BACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BEE78D24E030810051BACC /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		E9AA9CD22505200800D9C4B5 /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
 		E9AA9CD42505204000D9C4B5 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
 		E9AA9CD72505207B00D9C4B5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		E9AA9CD92505475D00D9C4B5 /* BorderViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderViewModifier.swift; sourceTree = "<group>"; };
 		E9BEE78424E030800051BACC /* Kuchi-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kuchi-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BEE78724E030800051BACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9BEE78924E030800051BACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 				E9AA9CD025051F8B00D9C4B5 /* WelcomeBackgroundImage.swift */,
 				E9AA9CD22505200800D9C4B5 /* LogoImage.swift */,
 				E9AA9CD42505204000D9C4B5 /* WelcomeMessageView.swift */,
+				E9AA9CD92505475D00D9C4B5 /* BorderViewModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				E9BEE78824E030800051BACC /* AppDelegate.swift in Sources */,
 				E9AA9CD52505204000D9C4B5 /* WelcomeMessageView.swift in Sources */,
 				E9BEE7A024E0316A0051BACC /* WelcomeView.swift in Sources */,
+				E9AA9CDA2505475D00D9C4B5 /* BorderViewModifier.swift in Sources */,
 				E9AA9CD82505207B00D9C4B5 /* RegisterView.swift in Sources */,
 				E9AA9CD32505200800D9C4B5 /* LogoImage.swift in Sources */,
 				E9AA9CD125051F8B00D9C4B5 /* WelcomeBackgroundImage.swift in Sources */,
