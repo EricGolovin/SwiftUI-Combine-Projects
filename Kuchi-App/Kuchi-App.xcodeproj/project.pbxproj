@@ -76,9 +76,9 @@
 		E9BEE78624E030800051BACC /* Kuchi-App */ = {
 			isa = PBXGroup;
 			children = (
-				E9BEE79C24E030E10051BACC /* Welcome */,
 				E9BEE78724E030800051BACC /* AppDelegate.swift */,
 				E9BEE78924E030800051BACC /* SceneDelegate.swift */,
+				E9BEE79C24E030E10051BACC /* Welcome */,
 				E9BEE79B24E030C40051BACC /* Resources */,
 				E9BEE79524E030810051BACC /* Info.plist */,
 			);
