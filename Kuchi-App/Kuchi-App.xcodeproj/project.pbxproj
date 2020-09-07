@@ -12,6 +12,10 @@
 		E9AA9CD52505204000D9C4B5 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CD42505204000D9C4B5 /* WelcomeMessageView.swift */; };
 		E9AA9CD82505207B00D9C4B5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CD72505207B00D9C4B5 /* RegisterView.swift */; };
 		E9AA9CDA2505475D00D9C4B5 /* BorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CD92505475D00D9C4B5 /* BorderViewModifier.swift */; };
+		E9AA9CDF2506833700D9C4B5 /* KeyboardFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CDE2506833700D9C4B5 /* KeyboardFollower.swift */; };
+		E9AA9CE82506C07500D9C4B5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CE72506C07500D9C4B5 /* Profile.swift */; };
+		E9AA9CEA2506C08C00D9C4B5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CE92506C08C00D9C4B5 /* Settings.swift */; };
+		E9AA9CEC2506C0A400D9C4B5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA9CEB2506C0A400D9C4B5 /* UserManager.swift */; };
 		E9BEE78824E030800051BACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BEE78724E030800051BACC /* AppDelegate.swift */; };
 		E9BEE78A24E030800051BACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BEE78924E030800051BACC /* SceneDelegate.swift */; };
 		E9BEE78E24E030810051BACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BEE78D24E030810051BACC /* Assets.xcassets */; };
@@ -27,6 +31,10 @@
 		E9AA9CD42505204000D9C4B5 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
 		E9AA9CD72505207B00D9C4B5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		E9AA9CD92505475D00D9C4B5 /* BorderViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderViewModifier.swift; sourceTree = "<group>"; };
+		E9AA9CDE2506833700D9C4B5 /* KeyboardFollower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFollower.swift; sourceTree = "<group>"; };
+		E9AA9CE72506C07500D9C4B5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		E9AA9CE92506C08C00D9C4B5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E9AA9CEB2506C0A400D9C4B5 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		E9BEE78424E030800051BACC /* Kuchi-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kuchi-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BEE78724E030800051BACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9BEE78924E030800051BACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +68,24 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E9AA9CDB2506830300D9C4B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA9CDE2506833700D9C4B5 /* KeyboardFollower.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E9AA9CE02506C04400D9C4B5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA9CE72506C07500D9C4B5 /* Profile.swift */,
+				E9AA9CE92506C08C00D9C4B5 /* Settings.swift */,
+				E9AA9CEB2506C0A400D9C4B5 /* UserManager.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		E9BEE77B24E030800051BACC = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +105,8 @@
 		E9BEE78624E030800051BACC /* Kuchi-App */ = {
 			isa = PBXGroup;
 			children = (
+				E9AA9CE02506C04400D9C4B5 /* Profile */,
+				E9AA9CDB2506830300D9C4B5 /* Utils */,
 				E9BEE78724E030800051BACC /* AppDelegate.swift */,
 				E9BEE78924E030800051BACC /* SceneDelegate.swift */,
 				E9BEE79C24E030E10051BACC /* Welcome */,
@@ -190,7 +218,11 @@
 			files = (
 				E9BEE78824E030800051BACC /* AppDelegate.swift in Sources */,
 				E9AA9CD52505204000D9C4B5 /* WelcomeMessageView.swift in Sources */,
+				E9AA9CEA2506C08C00D9C4B5 /* Settings.swift in Sources */,
+				E9AA9CEC2506C0A400D9C4B5 /* UserManager.swift in Sources */,
+				E9AA9CE82506C07500D9C4B5 /* Profile.swift in Sources */,
 				E9BEE7A024E0316A0051BACC /* WelcomeView.swift in Sources */,
+				E9AA9CDF2506833700D9C4B5 /* KeyboardFollower.swift in Sources */,
 				E9AA9CDA2505475D00D9C4B5 /* BorderViewModifier.swift in Sources */,
 				E9AA9CD82505207B00D9C4B5 /* RegisterView.swift in Sources */,
 				E9AA9CD32505200800D9C4B5 /* LogoImage.swift in Sources */,
